@@ -234,6 +234,7 @@ typedef struct
             
         case EZRecorderFileTypeWAV:
             asbd = [EZAudioUtilities stereoFloatInterleavedFormatWithSampleRate:sourceFormat.mSampleRate];
+            asbd.mFormatFlags = kAudioFormatFlagIsPacked | kAudioFormatFlagIsSignedInteger;  //Fix found at https://stackoverflow.com/a/27792191/826246
             break;
             
         default:
