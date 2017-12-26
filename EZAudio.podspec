@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.author       = { "Syed Haris Ali" => "syedhali07@gmail.com" }
     s.ios.deployment_target = '8.0'
     s.osx.deployment_target = '10.8'
-    s.source       = { :git => "https://github.com/syedhali/EZAudio.git", :tag => s.version }
+    s.source       = { :git => "https://github.com/sihekuang/EZAudio.git", :tag => s.version }
     s.exclude_files = [ 'EZAudio/TPCircularBuffer.{h,c}', 'EZAudio/EZAudioiOS.h', 'EZAudio/EZAudioOSX.h' ]
     s.ios.frameworks = 'AudioToolbox','AVFoundation','GLKit', 'Accelerate'
     s.osx.frameworks = 'AudioToolbox','AudioUnit','CoreAudio','QuartzCore','OpenGL','GLKit', 'Accelerate'
