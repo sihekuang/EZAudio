@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.ios.frameworks = 'AudioToolbox','AVFoundation','GLKit', 'Accelerate'
     s.osx.frameworks = 'AudioToolbox','AudioUnit','CoreAudio','QuartzCore','OpenGL','GLKit', 'Accelerate'
     s.requires_arc = true;
-    s.default_subspec = 'Full'
+    s.default_subspec = 'Core'
     s.subspec 'Core' do |core|
         core.source_files  = 'EZAudio/*.{h,m,c}'
     end
